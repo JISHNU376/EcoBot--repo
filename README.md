@@ -58,6 +58,7 @@ cd ecobot
 
 ## 📂 Project Structure
 
+```
 /ecobot
 │
 ├── app/               # Flutter mobile app
@@ -71,6 +72,7 @@ cd ecobot
 │   ├── requirements.txt # Python dependencies
 │
 └── README.md          # Project documentation
+```
 
 # 📊 Performance Metrics
 
