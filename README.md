@@ -1,16 +1,38 @@
-# ecobot
+# 🌿 EcoBot - AI-Powered Carbon Footprint Assistant
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-3.16-blue)](https://flutter.dev)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.103-green)](https://fastapi.tiangolo.com)
+[![License](https://img.shields.io/badge/License-MIT-brightgreen)](LICENSE)
 
-## Getting Started
+<img src="assets/ecobot_demo.gif" width="250" align="right">
 
-This project is a starting point for a Flutter application.
+An intelligent mobile application that tracks your daily carbon emissions and provides personalized sustainability recommendations using machine learning.
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Key Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Automated Activity Tracking**
+  - 🚗 Transport mode detection via GPS
+  - 🍎 Food intake logging with image recognition
+  - 💡 Energy usage integration with smart devices
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **AI Insights**
+  - 📈 Weekly emission trend forecasts
+  - 🔍 Anomaly detection in usage patterns
+  - 🎯 Personalized reduction goals
+
+- **Interactive Tools**
+  - 💬 NLP-powered sustainability chatbot
+  - 📊 Visual dashboard with emission breakdowns
+  - 🏆 Gamification with achievement badges
+
+## 🛠️ Technical Architecture
+
+```mermaid
+graph LR
+    A[Flutter UI] --> B[Firebase Auth]
+    A --> C[Device Sensors]
+    B --> D[(Firestore)]
+    C --> E[Local ML Processing]
+    D --> F[FastAPI Microservice]
+    F --> G[(EPA Database)]
+    F --> H[Python ML Models]
