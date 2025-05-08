@@ -34,6 +34,19 @@ An intelligent mobile application that tracks your daily carbon emissions and pr
 
 ---
 
+## 🛠️ Technical Architecture
+
+```mermaid
+graph LR
+    A[Flutter UI] --> B[Firebase Auth]
+    A --> C[Device Sensors]
+    B --> D[(Firestore)]
+    C --> E[Local ML Processing]
+    D --> F[FastAPI Microservice]
+    F --> G[(EPA Database)]
+    F --> H[Python ML Models]
+```
+
 ## ⚙ Installation
 
 ### 1️⃣ Clone the repository
@@ -76,15 +89,3 @@ bash
    git checkout -b feature/your-feature
 
 
-## 🛠️ Technical Architecture
-
-```mermaid
-graph LR
-    A[Flutter UI] --> B[Firebase Auth]
-    A --> C[Device Sensors]
-    B --> D[(Firestore)]
-    C --> E[Local ML Processing]
-    D --> F[FastAPI Microservice]
-    F --> G[(EPA Database)]
-    F --> H[Python ML Models]
-```
